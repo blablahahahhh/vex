@@ -40,11 +40,11 @@ int main() {
 
     LeftMotor.spin(vex::directionType::fwd, n1, vex::velocityUnits::rpm);
     RightMotor.spin(vex::directionType::fwd, -n2, vex::velocityUnits::rpm);
-    this_thread::sleep_for(3500);
+    this_thread::sleep_for(ts);
 
     LeftMotor.spin(vex::directionType::fwd, n2, vex::velocityUnits::rpm);
     RightMotor.spin(vex::directionType::fwd, -n1, vex::velocityUnits::rpm);
-    this_thread::sleep_for(3200);
+    this_thread::sleep_for(t);
 
     LeftMotor.stop();
     RightMotor.stop();
